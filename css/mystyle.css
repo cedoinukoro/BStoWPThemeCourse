@@ -10,7 +10,7 @@ body{
   margin-top:5px;
   font-family: 'Raleway', 'Roboto', Helvetica, sans-serif;
   font-size: 16px;
-  background: url('/img/tile.jpg') top left repeat;
+  background: url('../img/tile.jpg') top left repeat;
 }
 
 /* GLOBAL */
@@ -80,7 +80,7 @@ max-width: 130%;
 }
 
 .modal-content {
-  background: url('/img/tile.jpg')
+  background: url('../img/tile.jpg')
 }
 
 
@@ -130,7 +130,7 @@ button.btn:focus{
 }
 /* HERO */
 #hero{
- background: url('/img/hero-bg.jpg') 50% 0 repeat fixed;
+ background: url('../img/hero-bg.jpg') 50% 0 repeat fixed;
  min-height: 500px;
  padding: 40px 0;
  color:white;
@@ -224,6 +224,9 @@ section{
 
 }
 
+.section-header img{
+  padding: 10px 0;
+}
 section.main-content{
   padding: 40px 0;
 }
@@ -262,12 +265,12 @@ section h3{
   }
 
 .feature-img-default{
-background: url('/img/stuff-feature.jpg') no-repeat;
+background: url('../img/stuff-feature.jpg') no-repeat;
 background-size: cover;
 }
 
 .feature-img-alt{
-  background: url('/img/hipster-stuff.jpg') no-repeat;
+  background: url('../img/hipster-stuff.jpg') no-repeat;
   background-size: cover;
   }
 
@@ -303,14 +306,15 @@ div h4{
 }
 
 #featurette{
-  background: url('/img/stuff-bg.jpg') 50% 100% repeat fixed;
+  background: url('../img/stuff-bg.jpg') 50% 100% repeat fixed;
   background-size:cover;
   text-align:center;
   color:white;
 }
 
+
 #instructor {
-  background: white url('/img/brad-elvis.png')
+  background: white url('../img/brad-elvis.png')
 90% -10px  no-repeat;}
 /* 90% to the right and -10px to adjust the height  up*/
 
@@ -405,7 +409,7 @@ font-family: 'serif';
 /* SIGN UP */
 #signup{
   text-align:center;
-  background: url('/img/hipster-stuff.jpg') center center repeat fixed;
+  background: url('../img/hipster-stuff.jpg') center center repeat fixed;
   background-size: cover;
   color:white;
   padding: 140px 0
@@ -457,7 +461,7 @@ footer li.signup-link a:hover{
 /* BLOG PAGE */
 
 #blog{
-  background: url('/img/tile.jpg') fixed repeat;
+  background: url('../img/tile.jpg') fixed repeat;
   
 }
 
@@ -652,7 +656,7 @@ color:white;
 /* select every 3rd elem */
 .resource:nth-child(3n){
 margin-right:0;
-
+}
 
 /* contact page */
 
@@ -663,16 +667,24 @@ margin-right:0;
 
 
 /* Media QUERIES */
-@media screen and (max-width : 991px){
-  #instructor .container {
-    background: rgba(255,255,255,0.8);
-    padding: 20px;
+@media screen and (max-width : 991px) {
+	#instructor .container{
+		background: rgba(255,255,255,0.8);
+		padding: 20px;
+  }
+  
+  h1{
+    font-size: 2em;
+  }
+
+  h2{
+    font-size: 2em;
   }
 }
 
 @media screen and (max-width: 768px) {
   .logo{
-    width:50px;
+    width:50%;
   }
   #optin p {
     margin: 10px 0 10px;
@@ -680,6 +692,8 @@ margin-right:0;
 
   #featurette iframe {
     height: 240px;
+    width: 100%;
+    margin: auto;
   }
 
   section{
@@ -729,7 +743,7 @@ i.ci {
   display: inline-block;
   height:40px;
   width:40px;
-  background: url('/img/icon-sprite.png') no-repeat;
+  background: url('../img/icon-sprite.png') no-repeat;
 }
 
 /* used height and width of 40 so window of 40, im pulling 40px to the left each time */
@@ -761,4 +775,31 @@ textarea{
   /* includes the border within heigh and width */
   width:100%;
   padding: 6px 12px;
+}
+
+input[type="submit"],
+button[type="submit"]{
+  display:inline-block;
+  margin-bottom: 0;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.33;
+  text-align:center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor:pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select:none;
+  border:none;
+  border-radius: 6px;
+
+}
+
+input[type="submit"]:hover,
+button[type="submit"]:hover{
+outline: none;
+border: none;
+background: #aaa;
+  
 }

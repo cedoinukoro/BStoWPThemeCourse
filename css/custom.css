@@ -657,7 +657,7 @@ footer li.signup-link a:hover {
 /* ==== MEDIA QUERIES ==== */
 
 @media screen and (max-width : 991px) {
-	#instructor .container {
+	#instructor .div {
 		background: rgba(255,255,255,0.8);
 		padding: 20px;
 	}
