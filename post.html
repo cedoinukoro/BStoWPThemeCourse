@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Type" content="text/html">
+  <meta content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="">
+  <!-- this is for page icon in browser -->
+  <link rel="icon" href="assets/img/favicon.ico">
+  <!-- link FontAwesome -->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+  <link rel="stylesheet" href="css/font-awesome-5.10.min.css">
+  <!-- link custom Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="text/css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,100;1,400&display=swap" rel="text/css">
+
+  <title>Blog Post | Bootstrap to Wordpress</title>
+
+ <!-- link Bootstrap -->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <!-- my Css -->
+   <link rel="stylesheet" href="css/mystyle.css">
+</head>
+
+<!-- id the blog to style it -->
+<body id="blog">
+
+<!-- header -->
+<header class="site-header" role="banner">
+  <div class="navbar-wrapper">
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg ">
+      <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- end button -->
+      <a class="navbar-brand" src="#"><img src="img/logo.png">"</a>
+      <!-- collapsed section -->
+      <div class="navbar-collapse collapse" id="navbarTogglerDemo02" style="">
+        <!-- ml-auto for right and mr-auto for left -->
+        <ul class="navbar-nav ml-auto mt-2 mt-md-0">
+          <li class="nav-item">
+          
+            <a class="nav-link" href="index.html">Home </a>
+          </li>
+          <li class="nav-item active ">
+            <a class="nav-link" href="blog.html">Blog</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="resource.html">Resources</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+    <!-- navbar wrapper-->
+  </div>
+  <!-- navbar-wrapper ends -->
+</header>
+
+
+<!-- Section blog feature image-->
+<section class="feature-img feature-img-default feature-img-alt" data-type="background" data-speed="2">
+<h1>Blog</h1>
+</section>
+
+<section> <!-- MAIN CONTENT-->
+  <div class="container-fluid">
+    <div class="row" id="primary">
+      <div class="col-sm-8" id="content">
+        <main id="content" role="main">
+
+          <article class="post">
+            <header>
+              <h3>Blog Title here</h3>
+              
+              <div class="post-details">
+                <span class="fas fa-user"></span>Mr.Blogger
+
+                <span class="fas fa-history"></span><time>June 12, 2020</time>
+
+                <span class="fas fa-folder"></span><a href="#">Tutorials,</a><a href="#"> Coding</a>
+
+                <span class="fas fa-tag"></span>
+                <a href="#">wordpress,</a><a href="#">premium,</a><a href="#">another tag</a>
+                <div  	class="post-comments-badge">
+                  <a href=""><i class="fas fa-comments"></i> 168</a>
+                </div><!-- post-comments-badge -->
+                
+              </div><!-- post details-->
+            </header>
+            <div class="post-image">
+              <img src="/img/hero-bg.jpg" alt="hero image">
+            </div><!-- post image-->
+            <div class="post-excerpt">
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam, enim officiis perspiciatis, sequi ab fuga nihil blanditiis molestias quaerat provident debitis culpa repellendus minima quos quod tempore eligendi at! Voluptatem.lolorem..Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam, enim officiis perspiciatis, sequi ab fuga nihil blanditiis molestias quaerat provident debitis culpa repellendus minima quos quod tempore eligendi at! Voluptatem.lolorem..  </p>
+              <h3>Subtitle</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, ex, nostrum nam nobis recusandae totam mollitia culpa ipsum eligendi ipsa error odit aliquid modi reiciendis ab aperiam alias ut animi.</p>
+              <h4>Another subtitle</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, pariatur. Harum culpa porro, ut natus eius fugit ab ex molestiae odit velit fuga distinctio amet deleniti minus optio, error sed.</p>
+            </div><!--post content-->
+            
+          </article><!--post end-->
+
+          <div id="comments"> 
+            <div class="comment-wrap">
+              <h3><span>4</span> comments</h3>
+              
+              
+              <!-- These comments will have an image and more information on WP -->
+              <ol class="comments-list">
+                <li class="comments">
+                  <h4>Mr Comment <small>&bull; Aug 12, 2020</small></h4>
+                  <div class="comment-body">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt harum similique quidem explicabo asperiores error molestias, inventore iste blanditiis doloribus dignissimos tempore consequuntur soluta est distinctio vel alias temporibus. Voluptatum?</p>
+                  </div><!--comment body-->
+                  <ol class="children">
+                    <li class="comments">
+                      <h4>Mr no Comment <small>&bull; Aug 13, 2020</small></h4>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea reiciendis ut quidem earum autem? Illum nisi neque aspernatur quas facere praesentium eius. Autem veritatis soluta in corrupti repellat, temporibus dicta.</p>
+                    </li><!--comment 2-->
+                    <ol class="children">
+                      <li class="comments">
+                        <h4>Mr may Comment <small>&bull; Aug 14, 2020</small></h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea reiciendis ut quidem earum autem? Illum nisi neque aspernatur quas facere praesentium eius. Autem veritatis soluta in corrupti repellat, temporibus dicta.</p>
+                      </li><!--comment 3-->
+                    </ol><!--children 2-->
+                  </ol><!-- no children-->
+                </li><!--Comment 3-->
+              </ol><!-- comment list-->
+              <div class="comment-body">
+                <ol class="children">
+                  <li class="comments">
+                    <h4>Mr no Comment <small>&bull; Aug 13, 2020</small></h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea reiciendis ut quidem earum autem? Illum nisi neque aspernatur quas facere praesentium eius. Autem veritatis soluta in corrupti repellat, temporibus dicta.</p>
+                  </li><!--comment 4-->
+                </ol> <!-- comment list-->
+              </div>
+              <div id="leave-comment">
+                <h3>Leave a comment</h3>
+                <form>
+                <p>Your email address will not be published. Required fields are marked <span class="required">*</span></p>
+                <p class="comment-form-author">
+                  <label for="author">Name*</label>
+                  <input type="text" id="name">
+                </p>
+                <p class="comment-form-email">
+                  <label for="email">Email*</label>
+                  <input type="email"id="email">
+                </p>
+                 </form>
+                <p class="comment-form-url">
+                  <label for="url">Website</label>
+                  <input type="url"id="url">
+                </p> 
+                <p class="comment-form-comment">
+                  <label for="url">Comment*</label>
+                  <textarea type="text"id="comment" cols="45" rows="8"></textarea>
+                </p> 
+                <p class="form-submit">
+                  <input type="submit" value="Post comment">
+                </p>
+              </div>
+              
+
+             </div> <!--comment wrap-->
+             
+          </div> <!-- Comment section-->
+      
+        </main> 
+      </div><!-- end col 8-->
+        <!-- SIDE BAR -->
+        <aside class="col-sm-4">
+          <div class="widget">
+            <h4>Join ou Mailing List</h4>
+            <p>Keep up-to-date with the lastest news, and we'll <strong>send you something special as a thank you !</strong></p>
+            <button class="btn btn-block btn-success btn-lg" data-target="#myModal" data-toggle="modal">Clic here to subscribe !</button>
+          </div> <!--widget-->
+
+          <div class="widget">
+            <form role="form" class="search-form"></form>
+              <label for="sidebar-search" class="sr-only">search the blog...</label>
+              <input type="text" 
+              placeholder="Search the blog">
+            </form>
+          </div><!--widget-->
+
+          <div class="widget">
+            <h4>About Bootstrap to WordPress</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat voluptates aspernatur cupiditate nostrum excepturi facilis dolore ullam velit, praesentium molestias perferendis. Rem, ad? Temporibus qui commodi, a quia quos aliquid.</p>
+          </div>
+          <div class="widget">
+
+          
+          <h4>Recent posts</h4>
+          <ul> 
+            <li><a href="">Blog post #1</a></li>
+            <li><a href="">Blog post #2</a></li>
+            <li><a href="">Blog post #3</a></li>
+            <li><a href="">Blog post #4</a></li>
+            <li><a href="">Blog post #5</a></li>
+            <li><a href="">Blog post #6</a></li>
+          </ul>
+        </div>
+        <div class="widget">
+          <h4>Categories</h4>
+          <ul>
+            <li><a href="">Category #1</a></li>
+            <li><a href="">Category #2</a></li>
+            <li><a href="">Category #3</a></li>
+            <li><a href="">Category #4</a></li>
+            <li><a href="">Category #5</a></li>
+            <li><a href="">Category #6</a></li>
+          </ul>
+        </div><!--widget-->
+        </aside><!-- end side bar-->
+ 
+    </div><!--end row-->
+  </div><!--end container-->
+</section>
+
+
+<!-- SIGNUP -->
+<section id="signup" data-type="background" data-speed="4">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 offset-sm-3">
+        <h2>Are you reading to join us ?! blablablabla <strong>say yes !</strong></h2>
+        <p><a href="#" data-toggle="modal" data-target="#myModal" class="btn btn-success btn-lg btn-block">Yes, sign me up!</a></p>
+      </div><!--col center-->
+    </div><!--row-->
+  </div><!--container-->
+
+
+</section>
+
+<!-- FOOTER -->
+<footer id="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 d-sm-none d-lg-block">
+        <p><a href="index.html"><img src="/img/logo.png" alt="logo"></a></p>
+      </div><!--col end-->
+      <div class="col-lg-6 col-sm-9">
+        <nav>
+          <ul class="list-unstyled list-inline">
+            <li class="list-inline-item"><a href="">Home</a></li>
+            <li class="list-inline-item"><a href="">Blog</a></li>
+            <li class="list-inline-item"><a href="">Resources</a></li>
+            <li class="list-inline-item"><a href="">Contact</a></li>
+            <li class="list-inline-item signup-link"><a href="">Sign up now</a></li>
+          </ul>
+        </nav><!--nav-->
+      </div><!--col end-->
+      <div class="col-lg-3 col-sm-3">
+        <p class="pull-right">&copy; Someone's site</p>
+      </div><!--col end-->
+    </div><!--row end-->
+  </div><!--container-->
+</footer>
+
+<!-- MODAL  -->
+<div class="">
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content ">
+          <div class="modal-header">
+            
+            <h4 class="modal-title mr-auto" id="myModalLabel"><i class="far fa-envelope"></i> Subscribe to our Mailing List</h4>
+            <button type="button" class="btn  close " data-dismiss="modal"><span aria-hidden="true"></span>X</button>
+          </div><!-- modal header-->
+        <div class="modal-body">
+          <p>Simply enter yout name and email ! Thank you for joining us, we will give you something <em>for free !</em></p>
+          
+          <form action="" class="form-inline" role="form">
+            <div class="form-row">
+              <div class="col-sm-6">
+                <label class=""for="subscribe-name">Your first Name: </label>
+                <input type="text" class="form-control" id="subscribe-name" placeholder="Your first Name...">
+              </div>
+            
+              <div class="col-sm-6">
+                <label for="subscribe-email" class="">Your Email: </label>
+                <input type="email" class="form-control" id="subscribe-email" placeholder="Your email...">
+              </div>
+              
+              <input type="submit" class="btn btn-danger float-left mt-2 ml-1" value="Subscribe">
+            </div>
+         </form>
+         
+  
+         <hr>
+         <p><small>By providing your email you consent to received occasional promotional emails &amp; newsletters. <br>No spam. Just good stuff. We respect your privacy &amp; you may unsubscribe at any time.</small></p>
+        </div><!-- modal body-->
+      </div> <!-- modal content-->
+    </div><!--modal dialog-->
+  
+  </div><!-- modal-->
+  </div>
+
+  <!-- BOOTSTRAP CORE JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="js/jquery3.2.1min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="main.js"></script>
+
+
+</body>
+</html>
